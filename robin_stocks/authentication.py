@@ -83,6 +83,7 @@ def login(username=None, password=None, expiresIn=86400, scope='internal', by_sm
         os.makedirs(data_dir)
     creds_file = "robinhood.pickle"
     pickle_path = os.path.join(data_dir, creds_file)
+    print("Pickle: " + pickle_path) 
     # Challenge type is used if not logging in with two-factor authentication.
     if by_sms:
         challenge_type = "sms"
