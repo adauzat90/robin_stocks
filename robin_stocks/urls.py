@@ -199,7 +199,7 @@ def option_positions():
 
 
 def marketdata_options(id):
-    return('https://api.robinhood.com/marketdata/options/{0}/'.format(id))
+    return('https://api.robinhood.com/marketdata/options/instruments/{0}/'.format(id))
 
 # pricebook
 
